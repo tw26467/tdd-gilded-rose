@@ -11,7 +11,7 @@ class GildedRoseTest {
         Commodity[] commodities = new Commodity[] { new Commodity("foo", 0, 0) };
         GildedRose app = new GildedRose(commodities);
         app.UpdateQuality();
-        assertEquals("fixme", app.commodities[0].name);
+        assertEquals("foo", app.commodities[0].name);
     }
 
 }

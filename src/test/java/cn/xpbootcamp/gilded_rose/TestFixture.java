@@ -6,7 +6,7 @@ public class TestFixture {
                 new Commodity("Aged Brie", 2, 0),
                 new Commodity("Sulfuras", 0, 80),
                 new Commodity("Backstage pass", 15, 20),
-                new Commodity("Conjured Mana Cake", 3, 6) };
+                new Commodity("Cake", 3, 6) };
 
         GildedRose app = new GildedRose(commodities);
 

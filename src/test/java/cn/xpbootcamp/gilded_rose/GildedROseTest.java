@@ -19,7 +19,7 @@ class GildedRoseTest {
         Commodity[] commodities = new Commodity[] { new Commodity("Aged Brie", 2, 0) };
         GildedRose app = new GildedRose(commodities);
         app.UpdateQuality();
-        assertEquals(2, app.commodities[0].sellIn);
+        assertEquals(1, app.commodities[0].sellIn);
     }
 
     @Test
@@ -35,6 +35,6 @@ class GildedRoseTest {
         Commodity[] commodities = new Commodity[] { new Commodity("Backstage pass", 2, 0) };
         GildedRose app = new GildedRose(commodities);
         app.UpdateQuality();
-        assertEquals(2, app.commodities[0].sellIn);
+        assertEquals(1, app.commodities[0].sellIn);
     }
 }

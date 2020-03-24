@@ -14,4 +14,27 @@ class GildedRoseTest {
         assertEquals("foo", app.commodities[0].name);
     }
 
+    @Test
+    void aged_brie() {
+        Commodity[] commodities = new Commodity[] { new Commodity("Aged Brie", 2, 0) };
+        GildedRose app = new GildedRose(commodities);
+        app.UpdateQuality();
+        assertEquals(2, app.commodities[0].sellIn);
+    }
+
+    @Test
+    void sulfuras() {
+        Commodity[] commodities = new Commodity[] { new Commodity("Sulfuras", 2, 0) };
+        GildedRose app = new GildedRose(commodities);
+        app.UpdateQuality();
+        assertEquals(2, app.commodities[0].sellIn);
+    }
+
+    @Test
+    void backstage_pass() {
+        Commodity[] commodities = new Commodity[] { new Commodity("Backstage pass", 2, 0) };
+        GildedRose app = new GildedRose(commodities);
+        app.UpdateQuality();
+        assertEquals(2, app.commodities[0].sellIn);
+    }
 }
